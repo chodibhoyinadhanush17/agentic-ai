@@ -1,0 +1,30 @@
+{
+  "name": "agentflow-ai",
+  "version": "1.0.0",
+  "description": "Agentic AI Operations Automation Platform (Agentflow_AI)",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "build": "cd client && npm install && npm run build",
+    "start": "cd client && npm start",
+    "test": "npm --prefix server test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "ai",
+    "agentic",
+    "workflow",
+    "automation",
+    "react-flow",
+    "langgraph",
+    "openrouter",
+    "gemini"
+  ],
+  "author": "",
+  "license": "ISC"
+}
